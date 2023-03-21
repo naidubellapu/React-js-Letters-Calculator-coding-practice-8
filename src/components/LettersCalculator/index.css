@@ -1,0 +1,121 @@
+.app-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to right, #1d976c 0%, #93f9b9 107%);
+  min-height: 100vh;
+}
+
+.letters-calculator-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+}
+
+.calculator-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  order: 1;
+}
+
+.heading {
+  color: #ffffff;
+  font-size: 24px;
+  font-family: 'Roboto';
+  font-weight: bold;
+  text-align: center;
+}
+
+.input-phrase-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  color: #ffffff;
+  font-size: 12px;
+  font-family: 'Roboto';
+  font-weight: bold;
+}
+
+.letters-input {
+  color: #ffffff;
+  background-color: transparent;
+  font-size: 16px;
+  font-family: 'Roboto';
+  font-weight: 500;
+  border: 1px solid #e4e7eb;
+  border-radius: 4px;
+  margin-top: 8px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 12px;
+  padding-right: 12px;
+  outline: none;
+}
+
+.letters-count {
+  color: #219a6f;
+  font-size: 24px;
+  font-family: 'Roboto';
+  font-weight: bold;
+  border-radius: 12px;
+  background-color: #ffffff;
+  align-self: center;
+  margin-top: 32px;
+  padding: 18px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.letters-calculator-image {
+  width: 100%;
+  order: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .heading {
+    font-size: 46px;
+  }
+  .letters-input {
+    width: 350px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .letters-count {
+    padding: 30px;
+    padding-left: 38px;
+    padding-right: 38px;
+  }
+  .letters-calculator-image {
+    width: 700px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .letters-calculator-container {
+    flex-direction: row;
+  }
+  .calculator-container {
+    align-items: flex-start;
+    order: 0;
+  }
+  .heading {
+    font-size: 46px;
+    text-align: start;
+  }
+  .letters-count {
+    align-self: start;
+    padding: 24px;
+    padding-right: 32px;
+    padding-left: 32px;
+  }
+  .letters-calculator-image {
+    width: 550px;
+    order: 1;
+  }
+}
